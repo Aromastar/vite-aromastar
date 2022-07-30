@@ -41301,14 +41301,14 @@ const assetAttrsConfig = {
     link: ['href'],
     video: ['src', 'poster'],
     source: ['src', 'srcset'],
-    img: ['src', 'srcset'],
+    img: ['src', 'srcset', 'data-lazy-src'],
     image: ['xlink:href', 'href'],
     use: ['xlink:href', 'href']
 };
 const isAsyncScriptMap = new WeakMap();
 async function traverseHtml(html, filePath, visitor) {
     // lazy load compiler
-    const { parse, transform } = await import('./dep-966f7e9d.js').then(function (n) { return n.c; });
+    const { parse, transform } = await import('./dep-97573153.js').then(function (n) { return n.c; });
     // @vue/compiler-core doesn't like lowercase doctypes
     html = html.replace(/<!doctype\s/i, '<!DOCTYPE ');
     try {
@@ -42446,7 +42446,7 @@ async function compileCSS(id, code, config, urlReplacer, atImportResolvers, serv
         logger: config.logger
     }));
     if (isModule) {
-        postcssPlugins.unshift((await import('./dep-d8261efc.js').then(function (n) { return n.i; })).default({
+        postcssPlugins.unshift((await import('./dep-047e3497.js').then(function (n) { return n.i; })).default({
             ...modulesOptions,
             getJSON(cssFileName, _modules, outputFileName) {
                 modules = _modules;

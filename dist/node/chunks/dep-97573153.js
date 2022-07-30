@@ -1,4 +1,4 @@
-import { A as getAugmentedNamespace, B as getDefaultExportFromCjs } from './dep-b0ea5497.js';
+import { A as getAugmentedNamespace, B as getDefaultExportFromCjs } from './dep-2cb0a38a.js';
 
 import { fileURLToPath as __cjs_fileURLToPath } from 'node:url';
 import { dirname as __cjs_dirname } from 'node:path';
