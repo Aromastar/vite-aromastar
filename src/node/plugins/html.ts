@@ -128,7 +128,7 @@ export const assetAttrsConfig: Record<string, string[]> = {
   link: ['href'],
   video: ['src', 'poster'],
   source: ['src', 'srcset'],
-  img: ['src', 'srcset'],
+  img: ['src', 'srcset', 'data-lazy-src'],
   image: ['xlink:href', 'href'],
   use: ['xlink:href', 'href']
 }
