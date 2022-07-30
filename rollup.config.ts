@@ -271,7 +271,7 @@ function licensePlugin() {
       // https://github.com/rollup/rollup/blob/master/build-plugins/generate-license-file.js
       // MIT Licensed https://github.com/rollup/rollup/blob/master/LICENSE-CORE.md
       const coreLicense = fs.readFileSync(
-        path.resolve(__dirname, '../../LICENSE')
+        path.resolve(__dirname, './LICENSE')
       )
       function sortLicenses(licenses) {
         let withParenthesis = []
